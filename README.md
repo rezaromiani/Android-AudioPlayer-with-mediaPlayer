@@ -8,4 +8,4 @@ This App is written in Kotlin which uses the following Components & libraries:
 - TelephonyManager
 - AudioManager
 
-![alt text](https://github.com/rezaromiani/Android-AudioPlayer-with-mediaPlayer/blob/master/screen_shot.jpg?raw=true)
+![screen shot](https://github.com/rezaromiani/Android-AudioPlayer-with-mediaPlayer/blob/master/screen_shot.jpg?raw=true)
