@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground">
+
+    <com.example.myaudioplayer.view.CustomImageView
+        android:id="@+id/musicIv"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/image" />
+
+    <TextView
+        android:id="@+id/musicTitleTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/musicIv"
+        app:layout_constraintEnd_toStartOf="@+id/lottieAnimationView"
+        app:layout_constraintStart_toEndOf="@+id/musicIv"
+        app:layout_constraintTop_toTopOf="@+id/musicIv"
+        tools:text="Music Name" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        android:visibility="gone"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/music" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

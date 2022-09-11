@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Reza/AndroidStudioProjects/MyAudioPlayer/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.3635" />
+        <entry key="..\:/Users/Reza/AndroidStudioProjects/MyAudioPlayer/app/src/main/res/drawable/ic_round_music_note_24.xml" value="0.1" />
+        <entry key="..\:/Users/Reza/AndroidStudioProjects/MyAudioPlayer/app/src/main/res/drawable/ic_round_pause_24.xml" value="0.227" />
+        <entry key="..\:/Users/Reza/AndroidStudioProjects/MyAudioPlayer/app/src/main/res/drawable/ic_round_play_arrow_24.xml" value="0.3635" />
+        <entry key="..\:/Users/Reza/AndroidStudioProjects/MyAudioPlayer/app/src/main/res/drawable/ic_round_repeat_24_in_active.xml" value="0.176" />
+        <entry key="..\:/Users/Reza/AndroidStudioProjects/MyAudioPlayer/app/src/main/res/drawable/ic_round_shuffle_24_in_active.xml" value="0.3635" />
+        <entry key="..\:/Users/Reza/AndroidStudioProjects/MyAudioPlayer/app/src/main/res/drawable/ic_round_skip_next_24.xml" value="0.3635" />
+        <entry key="..\:/Users/Reza/AndroidStudioProjects/MyAudioPlayer/app/src/main/res/drawable/ic_round_skip_previous_24.xml" value="0.3635" />
+        <entry key="..\:/Users/Reza/AndroidStudioProjects/MyAudioPlayer/app/src/main/res/drawable/msuci_bg_circle.xml" value="0.3635" />
+        <entry key="..\:/Users/Reza/AndroidStudioProjects/MyAudioPlayer/app/src/main/res/layout/activity_main.xml" value="0.28370786516853935" />
+        <entry key="..\:/Users/Reza/AndroidStudioProjects/MyAudioPlayer/app/src/main/res/layout/activity_main_alt.xml" value="0.2557544757033248" />
+        <entry key="..\:/Users/Reza/AndroidStudioProjects/MyAudioPlayer/app/src/main/res/layout/music_item.xml" value="0.3625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

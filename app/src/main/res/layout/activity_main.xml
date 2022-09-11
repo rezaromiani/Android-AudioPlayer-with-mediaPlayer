@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingBottom="100dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/play_view_container"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="#333"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/musicSlider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:alpha="0"
+        android:translationZ="10dp"
+
+        android:value="0"
+        android:valueFrom="0"
+        app:flow_verticalGap="0dp"
+        app:labelBehavior="gone"
+        app:layout_constraintEnd_toEndOf="@+id/play_view_container"
+        app:layout_constraintStart_toStartOf="@+id/play_view_container"
+        app:layout_constraintTop_toBottomOf="@+id/musicPlayTv"
+        app:thumbColor="@color/white" />
+
+    <TextView
+        android:id="@+id/musicPlayTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/play_view_container"
+        app:layout_constraintStart_toStartOf="@+id/play_view_container"
+        app:layout_constraintTop_toTopOf="@+id/play_view_container"
+        tools:text="Behzad Leito - Shol Kon" />
+
+    <TextView
+        android:id="@+id/durationTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:alpha="0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/musicSlider"
+        app:layout_constraintTop_toBottomOf="@+id/musicSlider"
+        tools:text="000" />
+
+    <TextView
+        android:id="@+id/currentTimeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:alpha="0"
+        android:text="00:00"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/musicSlider"
+        app:layout_constraintTop_toBottomOf="@+id/musicSlider"
+        tools:text="000" />
+
+    <com.example.myaudioplayer.view.CustomImageView
+        android:id="@+id/musicCoverIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="@+id/play_view_container"
+        app:layout_constraintStart_toStartOf="@+id/play_view_container"
+        app:layout_constraintTop_toTopOf="@+id/play_view_container"
+        app:srcCompat="@drawable/image" />
+
+    <ImageView
+        android:id="@+id/pause_play_IV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/play_view_container"
+        app:layout_constraintEnd_toStartOf="@+id/nextBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/previousBtn"
+        app:layout_constraintTop_toTopOf="@+id/play_view_container"
+        app:srcCompat="@drawable/ic_round_play_arrow_24" />
+
+    <ImageView
+        android:id="@+id/previousBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/pause_play_IV"
+        app:layout_constraintEnd_toStartOf="@+id/pause_play_IV"
+        app:layout_constraintStart_toEndOf="@+id/musicPlayTv"
+        app:layout_constraintTop_toTopOf="@+id/pause_play_IV"
+        app:srcCompat="@drawable/ic_round_skip_previous_24" />
+
+    <ImageView
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/pause_play_IV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pause_play_IV"
+        app:layout_constraintTop_toTopOf="@+id/pause_play_IV"
+        app:srcCompat="@drawable/ic_round_skip_next_24" />
+
+    <ImageView
+        android:id="@+id/repeatBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:background="?selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/pause_play_IV"
+        app:layout_constraintStart_toStartOf="@+id/play_view_container"
+        app:layout_constraintTop_toTopOf="@+id/pause_play_IV"
+        app:srcCompat="@drawable/ic_round_repeat_24_in_active" />
+
+    <ImageView
+        android:id="@+id/shuffleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:background="?selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/pause_play_IV"
+        app:layout_constraintEnd_toEndOf="@+id/play_view_container"
+        app:layout_constraintTop_toTopOf="@+id/pause_play_IV"
+        app:srcCompat="@drawable/ic_round_shuffle_24_in_active" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
